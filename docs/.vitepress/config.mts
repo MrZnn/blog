@@ -1,5 +1,9 @@
 import { defineConfig } from 'vitepress'
-import { set_sidebar } from "./utils/auto-gen-sidebar.mjs";	// 改成自己的路径
+import { set_sidebar } from "./theme/untils/auto-gen-sidebar.mjs";	// 改成自己的路径
+
+import timeline from "vitepress-markdown-timeline";  // 时间线
+
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons' // 代码组图标
 
 const base = process.env.BASE || '/'
 
@@ -8,13 +12,14 @@ export default defineConfig({
   // base: '/docs-demo/',  // 部署github需要删除 
   base,
   head:[["link", {rel: "icon", href: "/logo.png"}]],
-  title: "MrZnnBlog",
+  title: "Blog-MrZnn",
   description: "逆流而上",
   lastUpdated: true, // string | boolean
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '家', link: '/' },
+      { text: 'home', link: '/' },
+      { text: '导航', link: '/nav/index' },
       { 
         text: 'langages',
         items: [
@@ -43,7 +48,7 @@ export default defineConfig({
 
     // 编辑链接
     editLink: {
-      pattern: "https://github.com/MrZnn/mrznn-blog.", // 自己项目仓库地址
+      pattern: "https://github.com/MrZnn/blog.", // 自己项目仓库地址
       text: "在 github 上编辑此页",
     },
 
@@ -58,7 +63,6 @@ export default defineConfig({
     ],
 
     footer: {
-      // message: "做好"
       copyright: "Copyright@ 2023-present My Name"
     },
 
@@ -86,5 +90,21 @@ export default defineConfig({
 
     returnToTopLabel: '返回顶部',
     docFooter: { prev: '上一篇', next: '下一篇' }
-  }
+  },
+  markdown: { 
+    //行号显示
+    lineNumbers: true, 
+
+    //时间线
+    config: (md) => {
+      md.use(timeline);
+      md.use(groupIconMdPlugin); //代码组图标
+    },
+
+  }, 
+  vite: { 
+    plugins: [
+      groupIconVitePlugin() //代码组图标
+    ],
+  },
 })

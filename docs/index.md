@@ -23,9 +23,10 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-
 <script setup lang="ts">
 import confetti from "canvas-confetti";
+
+
 
 /* 纸屑 */
 confetti({
