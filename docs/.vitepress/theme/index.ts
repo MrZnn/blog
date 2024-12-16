@@ -25,6 +25,7 @@ import "vitepress-markdown-timeline/dist/theme/index.css";
 import { inBrowser } from 'vitepress'
 import busuanzi from 'busuanzi.pure.js'
 import bsz from "./components/bsz.vue"
+import MyLayout from "./components/MyLayout.vue";
 
 //代码组样式
 import 'virtual:group-icons.css' 
@@ -34,6 +35,18 @@ import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 
 // 公告
 import notice from "./components/notice.vue"
+
+// 添加tailwind
+import "./style/tailwind.css";
+
+// 添加霞鹜文楷字体
+import "./style/font.css"
+
+// 引入归档
+import Archive from "./components/Archive.vue";
+
+// 标签页
+import TagPage from "./components/TagPage.vue";
 
 /** @type {import('vitepress').Theme} */
 export default {
@@ -51,8 +64,9 @@ export default {
     // 默认
     return h(DefaultTheme.Layout, null, {
       // 点击量
-      'layout-bottom': () => h(bsz), //不蒜子layout-bottom插槽
-      'layout-top': () => h(notice) // 使用layout-top插槽
+      'layout-bottom': () => h(bsz), // 不蒜子layout-bottom插槽
+      'layout-top': () => h(notice), // 使用layout-top插槽
+      "aside-bottom": () => h(MyLayout) // 不蒜子 aside-bottom  侧边插槽
     })
 
   },
@@ -66,6 +80,10 @@ export default {
 
     // 注册导航组件
     app.component('MNavLinks' , MNavLinks);
+    // 全局注册归档组件
+    app.component("Archive", Archive); 
+    // 标签页
+    app.component("TagPage", TagPage); 
     // ...
   },
   

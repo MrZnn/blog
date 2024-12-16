@@ -20,6 +20,8 @@ export default defineConfig({
     nav: [
       { text: 'home', link: '/' },
       { text: '导航', link: '/nav/index' },
+      { text: '归档', link: '/archives' },
+      { text: '标签', link: '/tags' },
       { 
         text: 'langages',
         items: [

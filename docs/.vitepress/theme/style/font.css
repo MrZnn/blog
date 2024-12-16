@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'LXGWWenKai';
+    src: url('../assets/LXGWWenKai-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'LXGWWenKai', sans-serif;
+  }
+  
+  
+  .content {
+    font-size: 18px; /* 你可以根据需要调整这个值 */
+  }
+  
+  .text[data-v-72643138]{  /* 侧边栏字体大小的配置*/
+    font-size:15px;
+  }
