@@ -6,7 +6,7 @@ import timeline from "vitepress-markdown-timeline";  // 时间线
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons' // 代码组图标
 
 import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss' //rss
-const baseUrl = 'https://mrznn2014.us.kg/'
+const baseUrl = 'https://mrznn2014.us.kg'
 const RSS: RSSOptions = {
   title: 'Blog-MrZnn',
   baseUrl,
