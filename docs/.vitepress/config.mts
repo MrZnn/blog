@@ -3,6 +3,7 @@ import { set_sidebar } from "./theme/untils/auto-gen-sidebar.mjs";	// 改成自�
 
 import timeline from "vitepress-markdown-timeline";  // 时间线
 
+
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons' // 代码组图标
 
 const base = process.env.BASE || '/'
@@ -18,10 +19,10 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'home', link: '/' },
-      { text: '导航', link: '/nav/index' },
-      { text: '归档', link: '/archives' },
-      { text: '标签', link: '/tags' },
+      { text: '🏡home', link: '/' },
+      { text: '🔥导航', link: '/nav/index' },
+      { text: '📃归档', link: '/archives' },
+      { text: '🔖标签', link: '/tags' },
       { 
         text: 'langages',
         items: [
@@ -36,6 +37,7 @@ export default defineConfig({
           {text: 'docker', link: '/posts/other/docker/'}
         ]
       },
+      { text: '🎉关于', link: '/about' },
     ],
 
     sidebar: { 

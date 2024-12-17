@@ -28,7 +28,7 @@ import bsz from "./components/bsz.vue"
 import MyLayout from "./components/MyLayout.vue";
 
 //代码组样式
-import 'virtual:group-icons.css' 
+import 'virtual:group-icons.css';
 
 // 评论
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
@@ -47,6 +47,11 @@ import Archive from "./components/Archive.vue";
 
 // 标签页
 import TagPage from "./components/TagPage.vue";
+
+// 美化
+// import "./style/var.css"
+// import "./style/verrides.scss"
+
 
 /** @type {import('vitepress').Theme} */
 export default {

@@ -6,7 +6,8 @@ description: 使用 VitePress 的 createContentLoader 函数以及 frontmat
 layout: doc
 navbar: "true"
 sidebar: "true"
-tags: blog
+tags: 
+  - vitepress
 date: 
 created: 2024-05-07T16:54
 updated: 2024-05-18T01:16

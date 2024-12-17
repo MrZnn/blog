@@ -30,11 +30,11 @@
 <script setup>
 import { computed } from 'vue';
 import { useRouter } from 'vitepress';
-import { data as postsData } from '../untils/notes.data.ts';
+import { data as postsData } from '../untils/notes.data';
 
 const uniqueTags = computed(() => {
-    const tags = postsData.flatMap(post => post.tags);
-    
+    const tags = postsData.flatMap(post => post.targs);
+
     return [...new Set(tags)];
 });
 
