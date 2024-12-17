@@ -31,5 +31,8 @@
   },
   "directories": {
     "doc": "docs"
+  },
+  "dependencies": {
+    "vitepress-plugin-rss": "^0.3.0"
   }
 }

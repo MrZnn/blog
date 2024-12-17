@@ -6,11 +6,11 @@ function closeBulletin() {
     visible.value = false
 }
 
-setTimeout(function(){ visible.value = false }, 5000);
+setTimeout(function(){ visible.value = false }, 3000);
 </script>
 
 <template>
-    <div v-if="visible" class="bulletin-wrapper" style="width: 300px;">
+    <div v-if="visible" class="bulletin-wrapper" style="width: 255px;">
 
         <div class="bulletin-title">
             <span class="bulletin-icon left">
@@ -23,7 +23,7 @@ setTimeout(function(){ visible.value = false }, 5000);
         <div class="bulletin-content">
             <h3 class="bulletin-h3">本次更新：</h3>
             <p class="bulletin-p">公告样式，参考自 <a class="bulletin-link" href="https://theme-reco.vuejs.press/" target="_blank">VuePress-Reco</a></p>
-            <p class="bulletin-p">本博客只技术分享，请自觉！！！</p>
+            <p class="bulletin-p">本博客只技术分享！</p>
             <img class="/bulletin-img" src="/qrcode.png">
             
             <hr>
