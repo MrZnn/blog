@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /start
+      link: /archives
     - theme: alt
       text: GitHub
       link: https://github.com/MrZnn

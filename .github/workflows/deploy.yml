@@ -59,11 +59,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment  # 指定id
         uses: actions/deploy-pages@v2 # 将之前的构建产物部署到github pages中
-        env:  # 添加环境变量部分
-          VITE_GISCUS_REPO: ${{ secrets.VITE_GISCUS_REPO }}
-          VITE_GISCUS_REPO_ID: ${{ secrets.VITE_GISCUS_REPO_ID }}
-          VITE_GISCUS_CATEGORY: ${{ secrets.VITE_GISCUS_CATEGORY }}
-          VITE_GISCUS_CATEGORY_ID: ${{ secrets.VITE_GISCUS_CATEGORY_ID }}
+        
 # name: Deploy Pages
 
 # # 触发条件，push到main分支或者pull request到main分支

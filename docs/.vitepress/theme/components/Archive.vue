@@ -248,7 +248,7 @@ import { data as postsData } from '../untils/notes.data.ts';
 const posts = ref([]);
 const archivedPosts = ref({});
 const currentPage = ref(1);
-const postsPerPage = ref(10); // 每页显示的文章数量
+const postsPerPage = ref(8); // 每页显示的文章数量
 const router = useRouter();
 
 // 解析日期字符串为 Date 对象

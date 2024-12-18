@@ -58,7 +58,7 @@ function goToTagPage(tag) {
 
 .tag {
     color: var(--vp-c-brand);
-    padding: 1px 5px;
+    padding: 1px 2px;
     margin: 1px;
     cursor: pointer;
 }
@@ -69,7 +69,7 @@ function goToTagPage(tag) {
 }
 
 .dark .tag {
-    color: #ffffff;
+    color: #21c4b6;
     background: #4a4a4a;
 }
 </style>
