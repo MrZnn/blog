@@ -113,7 +113,7 @@ export default {
     // Get frontmatter and route
     const { frontmatter } = useData();
         
-    // giscus配置
+    // giscus配置 测试
     giscusTalk({
       repo: import.meta.env.VITE_GISCUS_REPO,
       repoId: import.meta.env.VITE_GISCUS_REPO_ID,
