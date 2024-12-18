@@ -115,10 +115,10 @@ export default {
         
     // giscus配置
     giscusTalk({
-      repo: 'MrZnn/blog', //仓库
-      repoId: 'R_kgDONcYBbA', //仓库ID
-      category: 'Announcements', // 讨论分类
-      categoryId: 'DIC_kwDONcYBbM4ClKyn', //讨论分类ID
+      repo: import.meta.env.VITE_GISCUS_REPO,
+      repoId: import.meta.env.VITE_GISCUS_REPO_ID,
+      category: import.meta.env.VITE_GISCUS_CATEGORY,
+      categoryId: import.meta.env.VITE_GISCUS_CATEGORY_ID,
       mapping: 'pathname',
       inputPosition: 'bottom',
       lang: 'zh-CN',
