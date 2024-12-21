@@ -8,7 +8,7 @@ const hostname = 'https://mrznn2014.us.kg';
 export async function createRssFile(config: SiteConfig) {
     const feed = new Feed({
 		title: "MrZnn Blog-🖊",
-		description: "feedId:92373593915702272+userId:nI4vckqaPO1zo1gmUuOap",
+		description: "feedId:93301669951650816+userId:nI4vckqaPO1zo1gmUuOap",
 		id: hostname,
 		link: hostname,
 		language: "zh-CH",
