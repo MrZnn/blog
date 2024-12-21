@@ -5,6 +5,8 @@ layout: home
 hero:
   name: "MrZnn博客"
   tagline: 眼睛一闭一睁，一天过去了。
+  image:
+    src: /background.png
   actions:
     - theme: brand
       text: 开始

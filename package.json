@@ -18,6 +18,7 @@
     "autoprefixer": "^10.4.20",
     "busuanzi.pure.js": "^1.0.3",
     "canvas-confetti": "^1.9.3",
+    "feed": "^4.2.2",
     "medium-zoom": "^1.1.0",
     "postcss": "^8.4.49",
     "sass-embedded": "^1.83.0",
@@ -31,8 +32,5 @@
   },
   "directories": {
     "doc": "docs"
-  },
-  "dependencies": {
-    "vitepress-plugin-rss": "^0.3.0"
   }
 }
