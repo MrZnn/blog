@@ -6,14 +6,7 @@ import timeline from "vitepress-markdown-timeline";  // 时间线
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons' // 代码组图标
 
 import { Feed } from 'feed'
-// import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss' //rss
 import { createRssFile } from "./theme/untils/rss";
-const baseUrl = 'https://mrznn2014.us.kg'
-// const RSS: RSSOptions = {
-//   title: 'Blog-MrZnn',
-//   baseUrl,
-//   copyright: 'Copyright@ 2023-present My Name',
-// }
 
 const base = process.env.BASE || '/'
 
@@ -125,7 +118,6 @@ export default defineConfig({
   vite: { 
     plugins: [
       groupIconVitePlugin(), //代码组图标
-      // RssPlugin(RSS)
     ],
   },
   buildEnd: createRssFile,

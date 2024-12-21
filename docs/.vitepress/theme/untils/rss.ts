@@ -6,18 +6,15 @@ import { createContentLoader, type SiteConfig } from "vitepress";
 const hostname = 'https://mrznn2014.us.kg';
 
 export async function createRssFile(config: SiteConfig) {
-    console.log("--------------------")
-	console.log(config.outDir)
-    
     const feed = new Feed({
 		title: "MrZnn Blog-🖊",
-		description: "坚持深耕技术领域的T型前端程序员, 喜欢Vuejs、Nestjs, 还会点python、nlp、web3、后端",
+		description: "feedId:92373593915702272+userId:nI4vckqaPO1zo1gmUuOap",
 		id: hostname,
 		link: hostname,
 		language: "zh-CH",
 		image: "/logo.png",
-		favicon: `https://oss.justin3go.com/justin3goAvatar.ico`,
-		copyright: "Copyright@ 2023-present My Name",
+		favicon: `/logo.png`,
+		copyright: "Copyright@ 2014-present MrZnn",
 	});
 
 	const posts = await createContentLoader("posts/**/*.md", {
@@ -29,7 +26,7 @@ export async function createRssFile(config: SiteConfig) {
 
 	for (const { url, excerpt, html } of posts) {
     // 排除index.md与2022|2021|2020发布的文章
-    if(url.search(/index|201[0-2]/) >= 0) {
+    if(url.search(/index|202[0-2]/) >= 0) {
       continue;
     }
     // 仅保留最近3篇文章
@@ -47,7 +44,7 @@ export async function createRssFile(config: SiteConfig) {
 			author: [
 				{
 					name: "MrZnn",
-					email: "xxxx@qq.com",
+					email: "1242403712@qq.com",
 					link: "https://mrznn2014.us.kg",
 				},
 			],
