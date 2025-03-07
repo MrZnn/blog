@@ -29,7 +29,8 @@ export default defineConfig({
         text: '💪langages',
         items: [
           {text: 'go', link: '/posts/langages/go/'},
-          {text: 'python3', link: '/posts/langages/python3/'}
+          {text: 'python3', link: '/posts/langages/python3/'},
+          {text: 'javascript', link: '/posts/langages/javascript/'}
         ]
       },
       { 
@@ -45,6 +46,7 @@ export default defineConfig({
     sidebar: { 
       '/posts/langages/go': set_sidebar("/posts/langages/go/"),
       '/posts/langages/python3': set_sidebar("/posts/langages/python3/"),
+      '/posts/langages/javascript': set_sidebar("/posts/langages/javascript/"),
       '/posts/other/markdown/':  set_sidebar("/posts/前端/"),
       '/posts/other/docker/':  set_sidebar("/posts/前端/"),
     },

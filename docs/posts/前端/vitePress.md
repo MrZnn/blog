@@ -12,4 +12,13 @@ date:
 created: 2024-05-07T16:54
 updated: 2024-05-18T01:16
 ---
-# TEST
+# VitePress 使用
+
+[扩展](https://vitepress.dev/guide/markdown#import-code-snippets)
+
+[配置](https://vitepress.dev/reference/site-config)
+
+### 友情网站
+> [justin3go.com链接](https://github.com/Justin3go/justin3go.com/blob/release/docs/.vitepress/config/zh.ts)  
+> [chunge16链接](https://github.com/chunge16/vitepress-blogs-theme/blame/main/docs/index.md)  
+> [链接3](http://example.net)
