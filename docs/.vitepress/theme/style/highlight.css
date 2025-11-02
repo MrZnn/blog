@@ -1,0 +1,14 @@
+/* .vitepress/theme/styles/highlight.css */
+.highlight-box {
+    display: inline-block;
+    border: 1px solid rgba(255, 182, 193, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    padding: 10px;
+}
+
+.highlight-box:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 182, 193, 0.8);
+}

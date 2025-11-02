@@ -37,7 +37,9 @@ export default defineConfig({
         text: '📍杂记',
         items: [
           {text: 'markdown', link: '/posts/other/markdown/'},
-          {text: 'docker', link: '/posts/other/docker/'}
+          {text: 'docker', link: '/posts/other/docker/'},
+          {text: 'office', link: '/posts/other/office/'},
+          {text: 'project', link: '/posts/other/project/'}
         ]
       },
       { text: '🎉关于', link: '/about' },
@@ -47,8 +49,10 @@ export default defineConfig({
       '/posts/langages/go': set_sidebar("/posts/langages/go/"),
       '/posts/langages/python3': set_sidebar("/posts/langages/python3/"),
       '/posts/langages/javascript': set_sidebar("/posts/langages/javascript/"),
-      '/posts/other/markdown/':  set_sidebar("/posts/前端/"),
-      '/posts/other/docker/':  set_sidebar("/posts/前端/"),
+      '/posts/other/markdown/':  set_sidebar("/posts/other/markdown/"),
+      '/posts/other/docker/':  set_sidebar("/posts/other/docker/"),
+      '/posts/other/office/':  set_sidebar("/posts/other/office/"),
+      '/posts/other/project/':  set_sidebar("/posts/other/project/")
     },
 
     // sidebar: false, // 关闭侧边栏
